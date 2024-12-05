@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: white;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 80px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.project-card:hover a {
+    color: #fff;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+}
+
+form button {
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
