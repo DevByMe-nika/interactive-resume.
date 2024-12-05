@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nika's Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="name">Nika's Interactive Resume</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="fade-in-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/150" alt="Nika" class="profile-img">
+            <p>Hi, I'm Nika! I'm a web developer passionate about creating interactive, user-friendly web experiences. I specialize in front-end development using HTML, CSS, JavaScript, and React. I believe in clean, maintainable code that not only looks good but also works seamlessly across all platforms.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Project 1: Interactive Portfolio</h3>
+                    <p>A personal portfolio built with HTML, CSS, and JavaScript, showcasing my skills and projects.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: To-Do List App</h3>
+                    <p>A task manager app built with vanilla JavaScript, allowing users to manage their daily tasks with local storage support.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to connect, feel free to reach out to me!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Nika. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
